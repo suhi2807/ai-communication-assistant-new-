@@ -1,28 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>AI Communication Assistant</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Communication Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="app">
+    <div class="container">
 
-<h1>AI Communication Assistant</h1>
+        <h1>🤖 AI Communication Assistant</h1>
 
-<textarea id="text"></textarea>
+        <p class="subtitle">
+            Analyze • Improve • Reply • Sentiment
+        </p>
 
-<div class="buttons">
-<button onclick="improve()">Improve Tone</button>
-<button onclick="analyze()">Analyze Tone</button>
-<button onclick="reply()">Suggest Reply</button>
-</div>
+        <textarea
+            id="message"
+            placeholder="Type your message here..."></textarea>
 
-<div class="output" id="result"></div>
+        <div class="buttons">
 
-</div>
+            <button onclick="analyze()">
+                Analyze
+            </button>
 
-<script src="script.js"></script>
+            <button onclick="improve()">
+                Improve
+            </button>
+
+            <button onclick="reply()">
+                Reply
+            </button>
+
+            <button onclick="sentiment()">
+                Sentiment
+            </button>
+
+        </div>
+
+        <div class="card">
+            <h2>Result</h2>
+
+            <pre id="output">
+Your AI response will appear here...
+            </pre>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
